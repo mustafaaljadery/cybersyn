@@ -222,8 +222,11 @@ export default function Home() {
                 <div className="flex flex-row flex-wrap px-8">
                   {data.map((item: any, index: number) => {
                     return (
-                      <div className="p-2 md:p-4 w-full md:w-1/2">
-                        <Chart data={item} key={index} />
+                      <div
+                        key={index}
+                        className="p-2 md:p-4 w-full md:w-1/2"
+                      >
+                        <Chart data={item} />
                       </div>
                     );
                   })}
