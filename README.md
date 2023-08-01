@@ -14,6 +14,8 @@ This application was build using NextJS and the data is queried through the snow
 
 ## TODO
 - [ ] Make sure the data is not the sum of end period
+- [ ] Caching
+- [ ] Links to share 
 
 ## Deployment
 
