@@ -42,12 +42,6 @@ async function getValues(allRows: any, name: string) {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { name } = req.body
 
-  console.log(process.env.ACCOUNT)
-  console.log(process.env.S_USERNAME)
-  console.log(process.env.PASSWORD)
-  console.log(process.env.AUTHENTICATOR)
-  console.log(process.env.DATABASE)
-
   const connection = await snowflake.createConnection({
     account: process.env.ACCOUNT,
     username: process.env.S_USERNAME,
